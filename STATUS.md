@@ -1,0 +1,1 @@
+Manuscript scaffold completed with architecture, evidence model, claims ledger, limitations and reproducibility links. Physical sensing remains an integration boundary.
