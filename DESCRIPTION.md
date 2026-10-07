@@ -1,0 +1,1 @@
+Research manuscript scaffold for multimodal EXIM cargo evidence, provenance, discrepancy handling and future sensor integration.
