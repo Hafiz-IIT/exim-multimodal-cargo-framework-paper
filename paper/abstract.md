@@ -1,0 +1,3 @@
+# Abstract
+
+This manuscript develops a conceptual and testable framework for EXIM intelligence in which structured trade documents and future physical cargo observations are treated as distinct evidence streams. The proposed architecture emphasizes provenance, discrepancy detection, uncertainty and human review rather than equating successful extraction with truth. The current portfolio contains software prototypes for evidence fusion and document consistency; physical scanner hardware remains a future integration boundary.
