@@ -1,0 +1,31 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,booktabs}
+\usepackage{hyperref}
+\title{EXIM AI Co-Pilot: A Multimodal Cargo Scanning and Customs Automation Framework}
+\author{Syed Hafiz Ali}
+\date{Research and system-design manuscript in preparation}
+\begin{document}
+\maketitle
+\begin{abstract}
+This manuscript describes a proposed evidence-centered architecture for assisting export-import documentation and cargo discrepancy review. It connects document extraction, declaration comparison, cargo observations, provenance, role-based review, and human escalation. The framework is a design and research direction; it does not claim deployed customs integration, certified scanning hardware, regulatory approval, or validated operational performance.
+\end{abstract}
+\section{Operational motivation}
+Trade and logistics workflows combine heterogeneous documents and physical observations. Errors may arise from extraction, inconsistent declarations, stale records, missing evidence, or mismatched cargo attributes. A useful assistant must preserve source provenance and distinguish uncertainty from verified discrepancy.
+\section{Proposed architecture}
+The framework separates ingestion, document normalization, entity extraction, cross-document consistency checks, cargo-observation comparison, evidence scoring, role-based authorization, and review queues. Each finding should retain source references, timestamps, confidence, and a human-readable reason.
+\section{Evidence model}
+Let each claim be represented by a value, source, timestamp, extraction method, and review state. Agreement among documents is not necessarily independent corroboration: copied or derived documents may share a common upstream error. The design therefore records source lineage and flags correlated evidence.
+\section{Cargo observation boundary}
+The software framework may accept externally produced observations such as category, dimensions, weight, seal state, or scanner-derived signals. It does not itself create X-ray, gamma, terahertz, RFID, or other physical sensing capability. Hardware integration and calibration are separate validation requirements.
+\section{Evaluation design}
+Use synthetic invoices, packing lists, declarations, and cargo observations with labelled missing fields, extraction errors, stale authorizations, copied-source conflicts, and adversarial inconsistencies. Evaluate field extraction separately from discrepancy detection and decision quality. Report precision, recall, calibration, false escalation, missed discrepancy, and evidence traceability.
+\section{Governance and human review}
+The system should recommend rather than silently execute consequential customs or financial actions. Low-confidence, conflicting, stale, or high-impact cases should be routed to authorized human reviewers with a complete evidence packet and audit record.
+\section{Results}
+No real-world accuracy, throughput, or deployment results are claimed in this manuscript. Synthetic evaluations must be labelled as such.
+\section{Limitations}
+The current manuscript is an architecture and evaluation proposal. Access to representative lawful datasets, customs-system interfaces, calibrated scanning devices, security review, and operational validation remains future work.
+\section{Conclusion}
+The central contribution sought is not a generic document chatbot, but an evidence-preserving workflow for identifying discrepancies and escalating decisions in regulated trade operations. Its utility must be established through transparent evaluation and real stakeholder review.
+\end{document}
