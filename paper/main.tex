@@ -11,6 +11,7 @@
 This manuscript describes a proposed evidence-centered architecture for assisting export-import documentation and cargo discrepancy review. It connects document extraction, declaration comparison, cargo observations, provenance, role-based review, and human escalation. The framework is a design and research direction; it does not claim deployed customs integration, certified scanning hardware, regulatory approval, or validated operational performance.
 \end{abstract}
 \section{Operational motivation}
+The relevant international frameworks call for risk-based customs controls and describe the role of non-intrusive inspection equipment where available and appropriate \cite{wto2014tfa,wco2025safe,wco2025nii}.
 Trade and logistics workflows combine heterogeneous documents and physical observations. Errors may arise from extraction, inconsistent declarations, stale records, missing evidence, or mismatched cargo attributes. A useful assistant must preserve source provenance and distinguish uncertainty from verified discrepancy.
 \section{Proposed architecture}
 The framework separates ingestion, document normalization, entity extraction, cross-document consistency checks, cargo-observation comparison, evidence scoring, role-based authorization, and review queues. Each finding should retain source references, timestamps, confidence, and a human-readable reason.
