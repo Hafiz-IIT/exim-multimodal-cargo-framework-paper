@@ -1,29 +1,23 @@
-# EXIM AI Co-Pilot — Multimodal Cargo Scanning & Customs Automation Framework
+# EXIM AI Co-Pilot: A Multimodal Cargo Scanning and Customs Automation Framework
 
-> **Research manuscript scaffold:** a systems framework for combining trade-document evidence with future multimodal cargo observations.
+**Status: architecture manuscript in preparation; not submitted or published.**
 
-## Research question
-How could document, declared-cargo and future physical-observation evidence be fused while preserving provenance, uncertainty and human review boundaries?
+This repository describes an evidence-preserving architecture for EXIM document processing, cargo-observation comparison, discrepancy review, and human escalation.
 
-## Framework scope
-The manuscript connects:
-- invoice / packing-list / declaration evidence
-- HS/RITC-oriented item representations
-- provenance and discrepancy handling
-- multimodal evidence fusion
-- future X-ray / RF / IR / other sensor interfaces as **proposed integration points**
-- human verification and escalation
+## Files
+- paper/main.tex — manuscript source
+- paper/EXPERIMENT_PROTOCOL.md — synthetic scenario families, metrics, governance checks, and data boundaries
+- paper/system_architecture.md and evidence_model.md — architecture and evidence notes
+- paper/claims.md, limitations.md, reproducibility.md — claim and validation boundaries
+- Makefile — local PDF build target
 
-## Important boundary
-This repository does **not** claim that physical X-ray, THz, RF or IR scanner hardware has been implemented. It also does not claim customs/regulatory approval, ICEGATE/DGFT production integration, or autonomous customs decisions.
+## Build
+Requires LaTeX with geometry, AMS math, booktabs, and hyperref packages.
 
-## Sections
-- `paper/abstract.md`
-- `paper/system_architecture.md`
-- `paper/evidence_model.md`
-- `paper/claims.md`
-- `paper/limitations.md`
-- `paper/reproducibility.md`
+    make pdf
+    make clean
 
-Related implementation: [Cargo Scan Consistency Lab](https://github.com/Hafiz-IIT/cargo-scan-consistency-lab) · [EXIM Document Truth Bench](https://github.com/Hafiz-IIT/exim-document-truth-bench) · [EXIM AI Evidence-Gated Autonomy](https://github.com/Hafiz-IIT/EXIM-AI-Evidence-Gated-Autonomy)
-\n\n## Companion relationship\n\nThis is a **manuscript/framework companion**, not a deployed multimodal cargo system. Its closest executable implementation is [Cargo Scan Consistency Lab](https://github.com/Hafiz-IIT/cargo-scan-consistency-lab), with related evidence reasoning in [EXIM Document Truth Bench](https://github.com/Hafiz-IIT/exim-document-truth-bench).\n\n## Manuscript status\n\nThe repository documents a research framework and proposed integration points. It does not claim physical sensor implementation, regulatory integration, production customs automation, or publication acceptance.\n
+## Evidence boundary
+This is not a deployed customs integration, certified cargo scanner, regulatory approval, or validated operational system. No X-ray/THz/RFID hardware is claimed. Use synthetic or lawfully licensed/de-identified data; never commit client customs records or commercially sensitive documents.
+
+Related implementation work: https://github.com/Hafiz-IIT/exim-copilot-core and https://github.com/Hafiz-IIT/cargo-scan-consistency-lab
