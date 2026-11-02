@@ -1,0 +1,8 @@
+{
+  "study": "exim-document-and-cargo-evidence-evaluation",
+  "status": "not_run",
+  "results_available": false,
+  "data_type": "synthetic_or_lawfully_deidentified_only",
+  "required_metrics": ["field_precision", "field_recall", "discrepancy_precision", "discrepancy_recall", "false_escalation_rate", "traceability_coverage"],
+  "notes": "No customs deployment, certified scanner, or real-world validation is claimed."
+}
