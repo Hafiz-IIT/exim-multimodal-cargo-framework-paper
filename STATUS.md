@@ -1,1 +1,1 @@
-Manuscript scaffold completed with architecture, evidence model, claims ledger, limitations and reproducibility links. Physical sensing remains an integration boundary.
+LaTeX architecture manuscript, verified WCO/WTO references, synthetic evaluation protocol, and results schema are in place. CI compiles the source. No customs deployment, certified scanner, operational result, submission, or publication is claimed.
