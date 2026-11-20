@@ -2,7 +2,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,booktabs}
 \usepackage{hyperref}
-\title{EXIM AI Co-Pilot: A Multimodal Cargo Scanning and Customs Automation Framework}
+\title{A Research Framework for Evidence-Gated Multimodal Cargo Inspection in EXIM Workflows}
 \author{Syed Hafiz Ali}
 \date{Research and system-design manuscript in preparation}
 \begin{document}
@@ -11,7 +11,7 @@
 This manuscript describes a proposed evidence-centered architecture for assisting export-import documentation and cargo discrepancy review. It connects document extraction, declaration comparison, cargo observations, provenance, role-based review, and human escalation. The framework is a design and research direction; it does not claim deployed customs integration, certified scanning hardware, regulatory approval, or validated operational performance.
 \end{abstract}
 \section{Operational motivation}
-The relevant international frameworks call for risk-based customs controls and describe the role of non-intrusive inspection equipment where available and appropriate \cite{wto2014tfa,wco2025safe,wco2025nii}.
+The relevant international frameworks call for risk-based customs controls and describe the role of non-intrusive inspection equipment where available and appropriate \cite{wto2014tfa,wco2025safe,wco2025nii}. The ITC/UNCTAD technical note on WTO TFA Article 7.4 explains risk-based selectivity and the distinction between high- and low-risk consignments \cite{unctad2021risk}.
 Trade and logistics workflows combine heterogeneous documents and physical observations. Errors may arise from extraction, inconsistent declarations, stale records, missing evidence, or mismatched cargo attributes. A useful assistant must preserve source provenance and distinguish uncertainty from verified discrepancy.
 \section{Proposed architecture}
 The framework separates ingestion, document normalization, entity extraction, cross-document consistency checks, cargo-observation comparison, evidence scoring, role-based authorization, and review queues. Each finding should retain source references, timestamps, confidence, and a human-readable reason.
@@ -31,8 +31,8 @@ The current manuscript is an architecture and evaluation proposal. Access to rep
 The central contribution sought is not a generic document chatbot, but an evidence-preserving workflow for identifying discrepancies and escalating decisions in regulated trade operations. Its utility must be established through transparent evaluation and real stakeholder review.
 \begin{thebibliography}{9}
 \bibitem{wto2014tfa} World Trade Organization. Agreement on Trade Facilitation, Article 7, including provisions on risk management and release and clearance of goods. Official legal text: \url{https://www.wto.org/english/docs_e/legal_e/tfa-nov14_e.htm}.
-\bibitem{wco2025safe} World Customs Organization. SAFE Framework of Standards to Secure and Facilitate Global Trade, 2025 edition. \url{https://www.wcoomd.org/en/topics/facilitation/instrument-and-tools/frameworks-of-standards/safe_package.aspx}.
+\bibitem{wco2025safe} World Customs Organization. SAFE Framework of Standards to Secure and Facilitate Global Trade, 2025 edition. \url{https://www.wcoomd.org/-/media/wco/public/global/pdf/topics/facilitation/instruments-and-tools/tools/safe-package/safe-framework-2025_en.pdf}.
 \bibitem{wco2025nii} World Customs Organization. Guidelines for the Procurement and Deployment of Scanning / Non-Intrusive Inspection Equipment, June 2025. \url{https://www.wcoomd.org/en/topics/facilitation/instrument-and-tools/frameworks-of-standards/safe_package/nii-guidelines.aspx}.
-\bibitem{unctad2021risk} United Nations Conference on Trade and Development. Technical Note on the WTO Trade Facilitation Agreement: Article 7.4, Risk Management. \url{https://unctad.org/system/files/official-document/wto-technical-note_ch07a07-04_en.pdf}.
+\bibitem{unctad2021risk} International Trade Centre, United Nations Conference on Trade and Development, and United Nations Economic Commission for Europe. Technical Note on WTO Trade Facilitation Agreement Article 7.4: Risk Management, 2021. In \textit{Getting Down to Business: Making the Most of the WTO Trade Facilitation Agreement}. \url{https://unctad.org/system/files/official-document/wto-technical-note_ch07a07-04_en.pdf}.
 \end{thebibliography}
 \end{document}
